@@ -1,0 +1,26 @@
+/* Normal Tags */
+h1,p{
+    text-align: center;
+    font-family: cursive;
+}
+img{ 
+    margin-left:16%;
+    margin-right: 16%;
+}
+
+
+
+
+/* Classes */
+
+
+
+
+/* Ids */
+
+
+
+/* Global Variables */
+*{
+    box-sizing: border-box;
+}
