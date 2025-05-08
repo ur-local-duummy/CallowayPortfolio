@@ -1,26 +1,44 @@
-/* Normal Tags */
-h1,p{
+body {
+    background-color: #1a1a40;
+    color: #f0e6ff;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     text-align: center;
-    font-family: cursive;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #a29bfe;
+  }
+  
+  h2 {
+    color: #81ecec;
+  }
+  
+  a {
+    color: #fab1a0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+  }
+  table, th, td,tr {
+    border: 1px solid;
+    text-align: center;
+    color: #81ecec;
+    border-color: #6c5ce7;
 }
-img{ 
-    margin-left:16%;
-    margin-right: 16%;
+table{
+    width: 100%;
 }
-
-
-
-
-/* Classes */
-
-
-
-
-/* Ids */
-
-
-
-/* Global Variables */
-*{
-    box-sizing: border-box;
+  img {
+    margin: 20px;
+    border: 2px solid #6c5ce7;
+    max-width: 90%;
+    border-radius: 8px;
+  }
+/* optional CSS for game container */
+#my-game {
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    border: 1px solid black;
 }
