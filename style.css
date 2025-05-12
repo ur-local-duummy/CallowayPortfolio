@@ -51,3 +51,15 @@ ul{
 li{
   text-align: center;
 }
+
+/* Image hover effect for the images on the programs page and the one on the home page */
+
+img.hover-zoom {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+img.hover-zoom:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}

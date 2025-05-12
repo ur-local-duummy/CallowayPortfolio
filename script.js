@@ -105,3 +105,31 @@ function checkForMatch() {
     scoreText.text = "Funds: $0";
   }
 }
+
+
+// copyToClipboard.js ALL OF THIS IS CHAT GPT I DONT KNOW HOW TO MAKE THIS IN JS
+
+function copyToClipboard(text) {
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(text).then(() => {
+      alert("Copied to clipboard: " + text);
+    }).catch(err => {
+      console.error("Clipboard copy failed:", err);
+    });
+  } else {
+    const textarea = document.createElement("textarea");
+    textarea.value = text;
+    textarea.style.position = "fixed";
+    textarea.style.left = "-9999px";
+    document.body.appendChild(textarea);
+    textarea.focus();
+    textarea.select();
+    try {
+      document.execCommand('copy');
+      alert("Copied to clipboard: " + text);
+    } catch (err) {
+      console.error("Fallback copy failed:", err);
+    }
+    document.body.removeChild(textarea);
+  }
+}
